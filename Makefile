@@ -1,9 +1,9 @@
 all: main clean
-CC=gcc
+CC=g++
 CFLAGS=-Wall
 
 main.o:
-	$(CC) $(CFLAGS) -c src/main.c
+	$(CC) $(CFLAGS) -c src/main.cpp
 
 main: main.o
 	$(CC) $(CFLAGS) -o ret $^
